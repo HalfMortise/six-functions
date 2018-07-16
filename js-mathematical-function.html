@@ -1,0 +1,20 @@
+<!--This function performs as both a mathematical and a string function-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript Mathematical Function</title>
+	</head>
+	<body>
+<h3>Click for a Random Integer</h3>
+<p>Generate a random integer between 1 and 75</p>
+<!--The button is calling the function-->
+		<button onclick="document.getElementById('demo').innerHTML = getRandomInteger(0,75)">Generate</button>
+		<p id="demo"></p>
+	<script>
+		function getRandomInteger(min, max) {
+	return Math.floor(Math.random() * (max - min) ) + min;
+}
+	</script>
+	</body>
+</html>
