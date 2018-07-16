@@ -6,6 +6,10 @@
 	</head>
 	<body>
 ><?php
+//Mathematical Function: random number generator between various ranges
+echo rand(1, 50) . "<br>";
+echo rand(1, 30) . "<br>";
+
 
 /*Array Function: sorting first row of students by age in descending order
 
@@ -19,9 +23,10 @@ print_r($age);*/
 //
 //
 /*
+//String function
 //Simple password generator (don't actually use this for real passwords!)
 //The password length will be 15 characters
-function generatePasswordLength($length = 15) {
+function generatePassword($length = 15) {
 	$possibleChars = "abcdefghijklmnopqrstuvwxyz123456789)(*&^%$#@!";
 	$password = '';
 //The character output will loop up to 15 characters
@@ -30,14 +35,16 @@ function generatePasswordLength($length = 15) {
 		$rand = rand(0, strlen($possibleChars) - 1);
 		$password .= substr($possibleChars, $rand, 1);
 	}
-//This is where the function is called
 	return $password;
 }
+//This is where the function is called
+generatePassword();
+//
+//
+//
+//
 */
-//
-//
-//
-		//		//
+
 ?>
 	</body>
-</html?
+</html>
