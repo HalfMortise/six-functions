@@ -1,7 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Joy
- * Date: 7/16/2018
- * Time: 1:15 PM
- */
+/**Create three functions: one mathematical, one string, and one array**/
+
+function something() {
+	...
+}
+
+something(); //runs the function
+echo something(); //runs the function and displays its return
