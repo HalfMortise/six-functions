@@ -1,9 +1,20 @@
-<?php
-/**Create three functions: one mathematical, one string, and one array**/
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Six Functions</title>
+	</head>
+	<body>
+><?php
 
-function something() {
-	...
-}
+/*Array Function: sorting first row of students by age in descending order
 
-something(); //runs the function
-echo something(); //runs the function and displays its return
+//Define array
+$age = array("Joy"=>35, "Jude"=>32, "Chelsea"=>29, "Sarah"=>24.5, "Ryo"=> 24);
+
+//Printing array
+arsort($age);
+print_r($age);*/
+?>
+	</body>
+</html?
