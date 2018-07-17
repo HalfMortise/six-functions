@@ -1,3 +1,4 @@
+<!--Each function is collapsed and commented out-->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -5,13 +6,14 @@
 		<title>Six Functions</title>
 	</head>
 	<body>
-><?php
-//Mathematical Function: random number generator between various ranges
+<?php
+/*
+//MATHEMATICAL FUNCTION: random number generator between various ranges
 echo rand(1, 50) . "<br>";
 echo rand(1, 30) . "<br>";
-
-
-/*Array Function: sorting first row of students by age in descending order
+*/
+////////////////
+/*ARRAY FUNCTION: sorting first row of students by age in descending order
 
 //Define array
 $age = array("Joy"=>35, "Jude"=>32, "Joe"=>31, "Sarah"=>24.5, "Ryo"=> 24);
@@ -19,32 +21,14 @@ $age = array("Joy"=>35, "Jude"=>32, "Joe"=>31, "Sarah"=>24.5, "Ryo"=> 24);
 //Printing array
 arsort($age);
 print_r($age);*/
-//
-//
-//
+////////////////
 /*
-//String function
-//Simple password generator (don't actually use this for real passwords!)
-//The password length will be 15 characters
-function generatePassword($length = 15) {
-	$possibleChars = "abcdefghijklmnopqrstuvwxyz123456789)(*&^%$#@!";
-	$password = '';
-//The character output will loop up to 15 characters
-	for($i = 0; $i < $length; $i++) {
-		//This is randomizing the output of the characters
-		$rand = rand(0, strlen($possibleChars) - 1);
-		$password .= substr($possibleChars, $rand, 1);
-	}
-	return $password;
-}
-//This is where the function is called
-generatePassword();
-//
-//
-//
-//
+//STRING FUNCTION: joining elements of an array to return a string
+//First list the elements of the array
+$arr = array('The', 'join', 'function', 'returns', 'a', 'string', 'from', 'elements', 'of', 'an', 'array');
+//Then print
+echo join(" ",$arr);
 */
-
 ?>
 	</body>
 </html>
